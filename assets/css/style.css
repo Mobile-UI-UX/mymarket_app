@@ -1,0 +1,12 @@
+.ui-navbar .ui-btn{
+    background-color: white;
+    color: #fe6311;
+}
+
+.ui-btn-icon-top:after{
+    background-color: #fe6311;
+}
+
+.ui-page-theme-a .ui-btn.ui-btn-active{
+    background-color: #a2c432;
+}
