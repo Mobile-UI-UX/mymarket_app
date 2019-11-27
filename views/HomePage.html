@@ -1,11 +1,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
+   
+
+        <div data-role="header">
+            <h1>My Title</h1>
+        </div><!-- /header -->
     
+        <div data-role="content">	
+            <p>Hello world</p>		
+        </div><!-- /content -->
+    
+        
+        <div data-role="footer" data-id="foo1" data-position="fixed">		
+            <div  data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#" data-icon="home">Home</a></li>
+                    <li><a href="#" data-icon="grid">Category</a></li>
+                    <li><a href="#" data-icon="cart">Cart</a></li>
+                    <li><a href="#" data-icon="star" >Promotions</a></li>
+                    <li><a href="#" data-icon="user">Account</a></li>
+                </ul>
+            </div><!-- /navbar -->
+        </div><!-- /footer -->
+        
 </body>
+
+
 </html>
