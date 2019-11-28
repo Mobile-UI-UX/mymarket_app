@@ -10,3 +10,21 @@
 .ui-page-theme-a .ui-btn.ui-btn-active{
     background-color: #a2c432;
 }
+.ui-alt-icon.ui-icon-home:after, .ui-alt-icon .ui-icon-home:after{
+    background-image:url(../images/icons/home.svg);
+}
+.ui-icon-star:after{
+    background-image:url(../images/icons/fav.svg);
+}
+.ui-icon-user:after{
+    background-image:url(../images/icons/account.svg);
+}
+.ui-icon-grid:after{
+    background-image:url(../images/icons/category.svg);
+}
+.ui-icon-alert:after{
+    background-image:url(../images/icons/cart.svg);
+}
+.ui-icon-eye:after{
+    background-image:url(../images/icons/login.svg);
+}

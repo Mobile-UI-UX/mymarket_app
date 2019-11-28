@@ -8,15 +8,20 @@
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
       <link rel="stylesheet" type="text/css" href="../assets/css/style.css"  />
+     
+
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     
     <title>Document</title>
 </head>
 <body>
    
 
-        <div data-role="header">
-            <h1>My Title</h1>
-        </div><!-- /header -->
+    <div data-role="header">
+        <a href="index.html" data-icon="delete">Cancel</a>
+        <h1>Edit Contact</h1>
+        <a href="index.html" data-icon="eye" data-theme="a" class="ui-nodisc-icon">login</a>
+    </div>
     
         <div data-role="content">	
             <p>Hello world</p>		
@@ -26,15 +31,26 @@
         <div data-role="footer" data-id="foo1" data-position="fixed">		
             <div  data-role="navbar" data-iconpos="top">
                 <ul>
-                    <li><a href="#" data-icon="home">Home</a></li>
-                    <li><a href="#" data-icon="grid">Category</a></li>
-                    <li><a href="#" data-icon="cart">Cart</a></li>
-                    <li><a href="#" data-icon="star" >Promotions</a></li>
-                    <li><a href="#" data-icon="user">Account</a></li>
+                    <li><a href="#" data-icon="home" class="ui-nodisc-icon ui-alt-icon" >Home</a></li>
+                    <li><a href="#" data-icon="grid" class="ui-nodisc-icon">Category</a></li>
+                    <li><a href="#" data-icon="alert" class="ui-nodisc-icon">Cart</a></li>
+                    <li><a href="#" data-icon="star" class="ui-nodisc-icon" >Promotions</a></li>
+                    <li><a href="#" data-icon="user" class="ui-nodisc-icon" >Account</a></li>
                 </ul>
             </div><!-- /navbar -->
         </div><!-- /footer -->
         
+        <!-- <div data-role="footer" data-id="foo1" data-position="fixed">		
+            <div  data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li><a href="#" data-icon="home" class="ui-nodisc-icon " >Home</a></li>
+                    <li><a href="#" data-icon="grid" class="ui-nodisc-icon">Category</a></li>
+                    <li><a href="#" data-icon="cart" class="ui-nodisc-icon">Cart</a></li>
+                    <li><a href="#" data-icon="star" class="ui-nodisc-icon" >Promotions</a></li>
+                    <li><a href="#" data-icon="user" class="ui-nodisc-icon" >Account</a></li>
+                </ul>
+            </div>
+        </div> -->
 </body>
 
 
