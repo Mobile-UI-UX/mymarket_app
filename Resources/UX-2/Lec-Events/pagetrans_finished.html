@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Transition Events</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+        $(document).on('pagecontainerbeforehide', function (evt,data) {
+           alert("page about to be hidden");
+        });
+
+        $(document).on('pagecontainerbeforeshow', function (evt,data) {
+           alert("page about to be shown");
+        });
+
+        $(document).on('pagecontainerhide', function (evt,data) {
+           alert("page has been hidden");
+        });
+
+        $(document).on('pagecontainershow', function (evt,data) {
+           alert("page has been shown");
+        });
+    </script>
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="firstpage" data-role="page">
+        <header data-role="header">
+          <h1>Page Transition Example</h1>
+        </header>
+        <div class="ui-content">
+          <p>This is page 1, id "firstpage"</p>
+          <a href="#secondpage">Go to second page</a>
+        </div>
+    </section>
+
+    <section id="secondpage" data-role="page">
+        <header data-role="header">
+          <h1>Page Transition Example</h1>
+        </header>
+        <div class="ui-content">
+          <p>This is page 2, id "secondpage"</p>
+          <a href="#firstpage">Go to first page</a>
+        </div>
+    </section>
+</body>
+</html>
