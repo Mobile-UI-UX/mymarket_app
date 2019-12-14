@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Touch Events Example</title>
+    <!-- the three things that jQuery Mobile needs to work -->
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <script>
+        $(document).on('pagecreate', function (evt) {
+            $("#firstpage").on("tap", function (e) {
+                alert("you tapped!");
+            });
+
+            $("#firstpage").on("swiperight", function (e) {
+                alert("you swiped right!");
+            });
+
+            $("#firstpage").on("swipeleft", function (e) {
+                alert("you swiped left!");
+            });
+        });
+
+    </script>
+    <meta name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <!-- This is the first page -->
+    <section id="firstpage" data-role="page">
+        <header data-role="header">
+        <h1>Touch Events Example</h1>
+        </header>
+        <div class="ui-content">
+        <p>This is page 1</p>
+        </div>
+        <footer data-role="footer"><h2>Touch Events Example</h2></footer>
+    </section>
+</body>
+</html>
