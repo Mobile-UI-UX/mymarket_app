@@ -1,0 +1,116 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans";
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family:"Open Sans",sans-serif;
+    background-color: white !important;
+}
+
+.logo{
+    display: block;
+  width: 200px;
+  height: 150px;
+ margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+ #main{
+     width: 90%;
+     margin: 50px auto;
+ }
+ #tab-btn{
+    
+     display: -webkit-flex;
+     display: -moz-flex;
+     display: -ms-flex;
+     display: -o-flex;
+     display: flex;
+     
+     width: 100%;
+     justify-content: center;
+ }
+
+
+
+ 
+ .register,.login{
+     margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+  
+    
+}
+
+
+a.login{
+    color: #FE6311;
+}
+a.register{
+    color: #FE6311;
+}
+.active{
+    background-color: #eee;
+     color: #000;
+}
+.content,.other{
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 2px 2px 5px white;
+}
+.other{
+    display: none;
+}
+.inp{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border: 2px blacj;
+    border-bottom: 5px solid white;
+    background-color: #fff;
+    color: white;
+}
+.inp:focus{
+    outline: none;
+    border: 2px solid white;
+    border-bottom: 5px solid white;
+}
+.sub-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #f44336;
+    color: rgb(156, 33, 33);
+    cursor: pointer;
+    border-bottom: 5px solid #444;
+}
+#sub-btn:focus{
+    outline: none;
+}
+#sub-btn:active{
+    border: none;
+    background-color:orange ;
+    margin-top: 5px;
+}
+
+input[type="text"]{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
