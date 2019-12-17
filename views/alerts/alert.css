@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');  
+.ui-btn.ui-btn-b{
+    background-color: #FE6311 !important;
+    color: white;
+}
+.ui-dialog{
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+
+}
+.ui-content{
+    font-family:'Century Gothic','Futura','Didact Gothic',san-serif;
+
+}
+.ui-header .ui-title{
+    white-space: normal;
+}

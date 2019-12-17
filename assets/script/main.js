@@ -1,20 +1,65 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-    // alert("sd")
 
-    var firebaseConfig = {
-        apiKey: "AIzaSyDHHkugC42iITZ2JSK0IbKo3Q4DPtniKkg",
-        authDomain: "mymart-17ade.firebaseapp.com",
-        databaseURL: "https://mymart-17ade.firebaseio.com",
-        projectId: "mymart-17ade",
-        storageBucket: "mymart-17ade.appspot.com",
-        messagingSenderId: "338361233948",
-        appId: "1:338361233948:web:e133b7285a6595bcb865d9",
-        measurementId: "G-NFFZBW2LH6"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
+ $(document).ready(function () {
+//     // console.log("ready!");
+//     //  alert("sd")
+// popup();
+// $("#p").popup('open'); 
+// $('#alert').css('visibility', '');
 
+
+    // register
+    $("#reg").bind( "click", function(event, ui) {
+        alert("sdfs");
+             const signupForm = document.querySelector('#reg-box');
+            
+           
+            // get user info
+            const user = signupForm['username'].value;
+            const email = signupForm['email'].value;
+            const password = signupForm['password'].value;
+        
+            console.log(email);
+            // sign up the user
+            auth.createUserWithEmailAndPassword(email, password).then(data => {
+               
+                console.log(data);
+                // close the signup modal & reset form
+                // const modal = document.querySelector('#modal-signup');
+                // M.Modal.getInstance(modal).close();
+                // signupForm.reset();
+                $("#reg-box").trigger('reset');
+            }).then(()=>{
+                $("#reg-box").trigger('reset');
+               
+            }).catch(err => {
+
+                alert(err)
+                $('#error_div').css('visibility', '');
+                signupForm.querySelector('#error').innerHTML=err.message;
+               
+            });
+            
+            // .catch(err=>{
+            //    
+            // });
       
+
+        // $.mobile.changePage("../views/Login.html",{transition:"slideup"});
+    });
+   
+
+   
+   
 });
+
+
+
+
+
+
+// $("#nav_des").click(function() {
+//     alert("comes here");
+// //      //submit the form
+// //    $.mobile.changePage("county.html",{transition:"slideup"});
+
+//  });
