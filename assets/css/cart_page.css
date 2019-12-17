@@ -84,3 +84,6 @@
     .fav-item h2 {
         font-size: 18px;
     }
+    .ui-page.ui-page-active {
+        min-height: 100% !important;
+      }
