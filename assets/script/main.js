@@ -23,17 +23,19 @@
             auth.createUserWithEmailAndPassword(email, password).then(data => {
                
                 console.log(data);
+                $('#error_div').css('visibility', 'hidden');
                 // close the signup modal & reset form
                 // const modal = document.querySelector('#modal-signup');
                 // M.Modal.getInstance(modal).close();
                 // signupForm.reset();
                 $("#reg-box").trigger('reset');
+                //set msg for sucess
             }).then(()=>{
                 $("#reg-box").trigger('reset');
                
             }).catch(err => {
 
-                alert(err)
+                // alert(err)
                 $('#error_div').css('visibility', '');
                 signupForm.querySelector('#error').innerHTML=err.message;
                

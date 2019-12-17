@@ -34,7 +34,7 @@
     <script src="../assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="../assets/jquery/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/grid_category.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/grid_category.css" /> -->
 
 
 
@@ -44,8 +44,17 @@
     <link rel="stylesheet" href="../assets/themes/theam1/jquery.mobile.icons.min.css" /> -->
     <!-- <link rel="stylesheet" href="../assets/themes/theam2/themes/team_e_orange.css" />
     <link rel="stylesheet" href="../assets/themes/theam2/themes/jquery.mobile.icons.min.css" /> -->
+    <style>
+        .ui-page.ui-page-active {
+            min-height: 100% !important;
+        }
 
-<title>Category Page</title>
+        .ui-collapsible-heading .ui-btn {
+            border-top-width: 0;
+            border-bottom-width: 0;
+        }
+    </style>
+    <title>Category Page</title>
 </head>
 
 <body>
@@ -128,12 +137,25 @@
         <div role="main" class="ui-content">
 
             <ul data-role="listview" data-inset="true">
-                <li><a href="../views/ProductPage.html" rel="external">
-                        <img src="../assets/images/res/offer.jpg" class="ui-li-thumb">
-                        <h2>Meat</h2>
-                        <p class="ui-li-aside">Other</p>
-
-                    </a></li>
+                <li data-role="collapsible" data-iconpos="right" data-inset="false"
+                    style="border-color: white !important;">
+                    <h2>Meat</h2>
+                    <div class="ui-body ui-body-d">
+                        <a href="../views/CartPage.html" rel="external">
+                            <img src="../assets/images/res/offer.jpg" class="ui-li-thumb">
+                            <h2>Leaderboard</h2>
+                            <p>One of the worst-kept secrets in tech has been confirmed: Apple will hold an event
+                                October 23 in San Jose, California, at which the company is widely expected to unveil a
+                                smaller, cheaper version of its popular iPad called "Mini".</p>
+                        </a>
+                    </div>
+                    <!-- <ul>
+                        <ol><img src="../assets/images/res/offer.jpg" class="ui-li-thumb">  </ol>
+                        
+                        <ol><p >Other</p></ol>
+                        <ol><a href="../views/ProductPage.html" rel="external">hi</a></ol>
+                    </ul> -->
+                </li>
                 <li><a href="#">
                         <img src="../assets/images/res/offer.jpg" class="ui-li-thumb">
                         <h2>Meat</h2>
@@ -168,7 +190,7 @@
 
 
         <!-- footer -->
-        <div data-role="footer" data-id="foo1"  data-position="fixed">
+        <div data-role="footer" data-id="foo1" data-position="fixed">
             <div data-role="navbar" data-iconpos="top">
                 <ul>
                     <li><a href="../views/HomePage.html" data-icon="home" rel="external">Home</a></li>

@@ -21,21 +21,21 @@
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 	<!-- <script src="../assets/script/main.js"></script> -->
 
-	 <!-- boostrap 4.0 -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	 integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-	 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	 crossorigin="anonymous"></script>
-	
-	
-	
+	<!-- boostrap 4.0 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+
+
 	</script>
 	<script type="text/javascript">
 		$(document).ready(function () {
@@ -56,6 +56,24 @@
 			});
 		});
 	</script>
+
+	<style>
+		.ui-input-text,
+		.ui-input-search {
+			margin: .5em 0;
+			border-width: 0;
+			/* border-style: solid; */
+			border-bottom-width: 1;
+			border-bottom-width: 1px !important;
+			border-bottom-style: solid;
+		}
+
+		.ui-shadow-inset {
+			-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .2);
+			-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+			box-shadow: inset 0 0px 0px rgba(0, 0, 0, .2);
+		}
+	</style>
 
 </head>
 
@@ -87,8 +105,10 @@
 									placeholder="Enter Email"><br>
 								<input type="password" data-clear-btn="true" name="password" id="password"
 									placeholder="Enter password"><br>
-								<a data-role="button"  id="reg" class="sub-btn">SIGN UP</a>
-								<div  id="error_div" class="alert alert-danger" role="alert" style="visibility: hidden;"><p id="error"></p> </div>
+								<a data-role="button" id="reg" class="sub-btn">SIGN UP</a>
+								<div id="error_div" class="alert alert-danger" role="alert" style="visibility: hidden;">
+									<p id="error"></p>
+								</div>
 							</form>
 
 						</div>
@@ -100,29 +120,30 @@
 									placeholder="password"><br>
 
 								<input type="submit" id="log" name="submit" value="LOGIN" class="sub-btn">
-								<div id="error" class="alert alert-danger" role="alert" style="visibility: hidden;"> </div>
+								<div id="error" class="alert alert-danger" role="alert" style="visibility: hidden;">
+								</div>
 							</form>
 
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
-		
+
 
 		</div><!-- /rwd-example -->
 
 		<!-- alert -->
 		<!-- <a href="../views/alerts/success_register.html" id="dialog" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown" style='display:none;' ></a>
  -->
- 
+
 
 	</div>
 	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
 	<script src="../assets/script/firebase_init.js"></script>
-	
+
 	<script src="../assets/script/main.js"></script>
 
 </body>
