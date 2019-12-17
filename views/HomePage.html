@@ -14,9 +14,9 @@
 
     <!-- firebase -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script> -->
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -45,14 +45,14 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
 
     <!-- custom javascript -->
-    <script src="../assets/script/main.js"></script>
+    <!-- <script src="../assets/script/main.js"></script> -->
 
     <!-- theam config -->
     <!-- <link rel="stylesheet" href="../assets/themes/theam1/theam_d.css" />
     <link rel="stylesheet" href="../assets/themes/theam1/jquery.mobile.icons.min.css" /> -->
     <!-- <link rel="stylesheet" href="../assets/themes/theam2/themes/team_e_orange.css" />
     <link rel="stylesheet" href="../assets/themes/theam2/themes/jquery.mobile.icons.min.css" /> -->
-
+ 
     <title>Home</title>
 </head>
 
@@ -99,9 +99,14 @@
 
                              
                             <div class="ui-grid-b">
-                                <div class="ui-block-a"></div>
+                                <div class="ui-block-a" >
+                                    
+                                </div>
                                 <div class="ui-block-b">  
+                                    
                                     <a id="nav_des" href="../views/Login.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</a>
+                                    <a id="nav_des_acc" href="../views/AccountPage.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" >ACCOUNT</a>
+                                    <!--  <a id="nav_des_acc" data-role="button" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-user">SEARCH</a> -->
                                 </div>
                                 <div class="ui-block-c"></div>
                             </div><!-- /grid-b -->
@@ -173,13 +178,15 @@
 
         <!-- /header -->
         <div role="main" class="ui-content">
-            <ul data-role="listview" data-inset="true">
+            <ul data-role="listview" data-inset="true" class="home-cat-list">
+                
                 <li><a href="#">
                         <img src="../assets/images/res/offer.jpg" class="ui-li-thumb">
                         <h2>iOS 6.1</h2>
                         <p>Apple released iOS 6.1</p>
                         <p class="ui-li-aside">Meat</p>
-                    </a></li>
+                    </a>
+                </li>
                 <li><a href="#">
                         <img src="../assets/images/res/offer.jpg" class="ui-li-thumb">
                         <h2>BlackBerry 10</h2>
@@ -197,7 +204,8 @@
                         <h2>Galaxy</h2>
                         <p>New Samsung Galaxy Express</p>
                         <p class="ui-li-aside">Other</p>
-                    </a></li>
+                    </a>
+                </li>
 
             </ul>
         </div><!-- /content -->
@@ -271,9 +279,16 @@
                 </ul>
             </div>
         </div> -->
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+	<script src="../assets/script/firebase_init.js"></script> -->
+    <script src="../assets/script/common.js"></script>
+    <!-- <script src="../assets/script/main.js"></script> -->
+   
 </body>
-<div></div>
-<div></div>
-</div>
+
+
 
 </html>

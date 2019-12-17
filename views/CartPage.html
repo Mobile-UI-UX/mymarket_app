@@ -33,6 +33,7 @@
     <script src="../assets/jquery/jquery-1.11.1.min.js"></script>
     <script src="../assets/jquery/jquery.mobile-1.4.5.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <script src="../assets/script/common.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" /> -->
 
 
@@ -72,10 +73,10 @@
 
                             <div data-role="popup" data-theme="a" data-overlay-theme="b" data-transition="slidedown"
                                 id="positionWindow" class="ui-corner-all">
-                                <div style="padding:10px 20px;">
+                                <div style="padding:10px 20px;" class="pop" >
                                                 <h3>Search for Products</h3>
-                                                <label for="un" class="ui-hidden-accessible">Username:</label>
-                                                <input type="text" name="user" id="un" value="" placeholder="username"
+                                                <label for="un" class="ui-hidden-accessible">What Are You Looking For?</label>
+                                                <input type="text" name="user" id="un" value="" placeholder="What Are You Looking For?"
                                         data-theme="a">
                                                
                                                 <button type="submit"
@@ -93,7 +94,8 @@
                             <div class="ui-block-b">  
                                 <button id="nav_des"
                                     class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</button>
-                            </div>
+                                    <a id="nav_des_acc" href="../views/AccountPage.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" >ACCOUNT</a>
+                                </div>
                             <div class="ui-block-c"></div>
                         </div><!-- /grid-b -->
 
@@ -186,7 +188,7 @@
     <div data-role="footer" data-id="foo1" data-position="fixed">
             <div class="ui-grid-a bottom-tag" data-position="fixed" style="color:#bbb !important;" >
                     <div class="ui-block-a"><div class="ui-bar ui-bar-a bottom-tag text-center" style="height:60px"><p><span>Total</span> Rs.1500.00</p></div></div>
-                    <div class="ui-block-b"><div class="ui-bar ui-bar-a bottom-tag text-center" style="height:60px"><button class="ui-btn ui-btn-inline pay btn btn-default btn-lg">Pay Now</button></div></div>
+                    <div class="ui-block-b"><div class="ui-bar ui-bar-a bottom-tag text-center" style="height:60px"><button class="ui-btn ui-btn-inline pay btn btn-default btn-lg" >Pay Now</button></div></div>
                 </div>
             
         <div data-role="navbar" data-iconpos="top">
