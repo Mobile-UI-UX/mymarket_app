@@ -62,7 +62,44 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
 
 
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
+.title {
+    min-height: 1.2em;
+    text-align: center;
+    font-size: 10px;
+    display: block;
+    margin: .2em 30% .8em;
+    padding: 10;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: 0 !important;
+    border: 1px solid #A2C432;
+    background: #A2C432;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #335413;
+}
+
+.ui-mobile label {
+    font-size: 26px;
+    font-weight: 200;
+    font-family: 'Century Gothic';
+    margin: 0 0 0;
+}
+
+.ui-mobile label {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.ui-btn-icon-notext.ui-btn-left {
+    margin-left: 4%;
+    margin-top: 1%;
+}
+        </style>
 
     <!-- theam config -->
     <!-- <link rel="stylesheet" href="../assets/themes/theam1/theam_d.css" />
@@ -121,9 +158,15 @@
             </div>
 
         </div>
+        <div data-role="header">
+                <a href="../views/AccountPage.html"
+                    class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
+                <label for="title" class="title">ABOUT US</label>
+                <!-- <a href="#" data-icon="check">Save</a> -->
+            </div>
 
         <!-- green lable -->
-        <label for="title" class="title">ABOUT US</label>
+        <!-- <label for="title" class="title">ABOUT US</label> -->
 
 
         <div class="rwd-example">
