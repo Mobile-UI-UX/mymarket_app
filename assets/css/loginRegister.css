@@ -62,16 +62,16 @@
 
 
 a.login{
-    color: #f7d5c3;
+    color: #f7d5c3 !important;
 }
 a.register{
-    color: #f7d5c3;
+    color: #f7d5c3 !important;
 }
 a.register.active{
-    color: #FE6311;
+    color: #FE6311 !important;
 }
 a.login.active{
-    color: #FE6311;
+    color: #FE6311 !important;
 }
 .active{
     background-color: #eee;

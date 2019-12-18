@@ -63,7 +63,7 @@
         border: 2px solid red;
         margin-right: 0 !important;
     }
-
+/* 
     .fav-item {
         display: grid;
         grid-template-columns: 25% 65% 10%;
@@ -83,7 +83,32 @@
 
     .fav-item h2 {
         font-size: 18px;
-    }
+    } */
     .ui-page.ui-page-active {
         min-height: 100% !important;
       }
+
+      /* .cart-item .x {
+        color: black !important;
+    } */
+
+    .payment-dets p {
+        color: black !important;
+        font-size:15px !important;
+    }
+
+    .my-btn {
+        /* background-color: #fe6311 !important;
+        color: white !important; */
+        font-weight: lighter !important;
+        display: block !important;
+        width: 100% !important;
+      }
+
+      .payment-tab {
+          
+      }
+
+     .total h1 {
+         font-size: 18px !important;
+     }
