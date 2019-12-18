@@ -4,9 +4,13 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
 		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -18,44 +22,53 @@
 	<style type="text/css">
 	</style>
 
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+	<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script> -->
+	
 	<!-- <script src="../assets/script/main.js"></script> -->
 
-	 <!-- boostrap 4.0 -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-	 integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	 integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-	 crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-	 integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-	 crossorigin="anonymous"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-	 integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-	 crossorigin="anonymous"></script>
-	
-	
-	
+	<!-- boostrap 4.0 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+
+		<!-- popup -->
+		<!-- <link rel="stylesheet" type="text/css" href="../assets/jquery/popup/popup.css" />
+		<script src="../assets/jquery/popup/popup.min.js"></script> -->
+
+
 	</script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-			$(".register_form").show();
-			$(".register").addClass('active');
-			$(".login_form").hide();
-			$(".register").click(function () {
-				$(".register_form").show();
-				$(".login_form").hide();
-				$(".register").addClass('active');
-				$(".login").removeClass('active');
-			});
-			$(".login").click(function () {
-				$(".login_form").show();
-				$(".register_form").hide();
-				$(".login").addClass('active');
-				$(".register").removeClass('active');
-			});
-		});
+		// $(document).ready(function () {
+			
+		// });
 	</script>
+
+	<style>
+		.ui-input-text,
+		.ui-input-search {
+			margin: .5em 0;
+			border-width: 0;
+			/* border-style: solid; */
+			border-bottom-width: 1;
+			border-bottom-width: 1px !important;
+			border-bottom-style: solid;
+		}
+
+		.ui-shadow-inset {
+			-webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, .2);
+			-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+			box-shadow: inset 0 0px 0px rgba(0, 0, 0, .2);
+		}
+	</style>
 
 </head>
 
@@ -87,42 +100,60 @@
 									placeholder="Enter Email"><br>
 								<input type="password" data-clear-btn="true" name="password" id="password"
 									placeholder="Enter password"><br>
-								<a data-role="button"  id="reg" class="sub-btn">SIGN UP</a>
-								<div  id="error_div" class="alert alert-danger" role="alert" style="visibility: hidden;"><p id="error"></p> </div>
+								<a data-role="button" id="reg" class="sub-btn">SIGN UP</a>
+								<div id="error_div" class="alert alert-danger" role="alert" style="visibility: hidden;">
+									<p id="error"></p>
+								</div>
 							</form>
 
 						</div>
 						<div class="login_form">
 							<form id="login-box">
 
-								<input type="text" placeholder="Username"> <br>
-								<input type="password" data-clear-btn="true" name="Password" id="password"
+								<input type="email" placeholder="Email" data-clear-btn="true" name="login-email"> <br>
+								<input type="password" data-clear-btn="true" name="login-password" id="password"
 									placeholder="password"><br>
 
-								<input type="submit" id="log" name="submit" value="LOGIN" class="sub-btn">
-								<div id="error" class="alert alert-danger" role="alert" style="visibility: hidden;"> </div>
+								<!-- <input type="submit" id="log" name="submit" value="LOGIN" class="sub-btn"> -->
+								<a data-role="button" id="log" class="sub-btn">LOGIN</a>
+								<div id="error_div_log" class="alert alert-danger" role="alert" style="visibility: hidden;">
+									<p id="error"></p>
+								</div>
+
 							</form>
 
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
-		
+
 
 		</div><!-- /rwd-example -->
 
-		<!-- alert -->
-		<!-- <a href="../views/alerts/success_register.html" id="dialog" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown" style='display:none;' ></a>
- -->
- 
+		 <div class="modal fade bd-example-modal-sm" id="myModel" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+			  <div class="modal-content">
+				...
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a> -->
+		  <div data-role="popup" id="popupBasic">
+		  <p>Success.</p>
+		  </div>
+		<!-- alert --> 
+		<a href="../views/alerts/success_register.html" id="dialog" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown" style='display:none;' ></a>
+
+
 
 	</div>
 	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
 	<script src="../assets/script/firebase_init.js"></script>
-	
+
 	<script src="../assets/script/main.js"></script>
 
 </body>

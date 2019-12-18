@@ -40,6 +40,12 @@
     <!-- Qr code scan -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+	<script src="../assets/script/firebase_init.js"></script>
+    <script src="../assets/script/common.js"></script>
+    <script src="../assets/script/account.js"></script>
     <!-- <script src="C:\Users\Asus\Desktop\Final Year\UI_UX\CW Implementation\instascan.min.js"></script> -->
 
 
@@ -93,9 +99,7 @@
 
                                 <!-- <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 
-                                <a href="../views/AboutUs.html" rel="external" id="popupPadded" data-icon="search" data-rel="popup"
-                                    data-theme="a" data-overlay-theme="a" data-position-to="window"
-                                    class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all">Search</a>
+                               
 
                                 
 
@@ -107,9 +111,12 @@
                             <div class="ui-grid-b">
                                 <div class="ui-block-a"></div>
                                 <div class="ui-block-b">  
-                                    <button id="nav_des"
-                                        class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</button>
-                                </div>
+                                    <!-- <button id="nav_des"
+                                        class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</button> -->
+                                        <a href="../views/AboutUs.html" rel="external" id="popupPadded" data-icon="search" data-rel="popup"
+                                        data-theme="a" data-overlay-theme="a" data-position-to="window"
+                                        class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-corner-all">Search</a>
+                                    </div>
                                 <div class="ui-block-c"></div>
                             </div><!-- /grid-b -->
 
@@ -169,8 +176,11 @@
                     <a href="#two" class="ui-btn ui-shadow ui-corner-all">Leaderboard</a>
                     <a href="#popupqrcode" data-rel="popup" data-position-to="window"
                         class="ui-btn ui-shadow ui-corner-all" data-transition="pop">Add Points</a>
-                    <a href="#two" class="ui-btn ui-shadow ui-corner-all"
-                        style="background-color: #FE6311 !important; color: white !important;">Logout</a>
+                    <!-- <a href="#two" id="logoutbtn" class="ui-btn ui-shadow ui-corner-all"
+                        style="background-color: #FE6311 !important; color: white !important;">Logout</a> -->
+
+                        <a href="../views/alerts/logout_confirm.html"  rel="external" class="ui-shadow ui-btn ui-corner-all "
+                        style="background-color: #FE6311 !important; color: white !important;" data-rel="dialog" data-position-to="window">Logout</a>
                 </div>
                 <!-- <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-shadow ui-corner-all" data-transition="pop">Sign in</a> -->
 
