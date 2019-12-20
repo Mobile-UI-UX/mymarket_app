@@ -1,56 +1,56 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <!--  cdn config jquey mobile -->
-        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  cdn config jquey mobile -->
+    <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../assets/css/style.css" /> -->
-        <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-    
-    
-        <!-- firebase -->
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
-        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
-    
-        <!-- TODO: Add SDKs for Firebase products that you want to use
+    <!-- <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+
+
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
-        <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
-    
-        <!-- boostrap 4.0 -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    
-        <!-- main library -->
-        <link rel="stylesheet" href="../assets/jquery/jquery.mobile-1.4.5.min.css" />
-        <link rel="stylesheet" href="../assets/jquery/font-awesome.min.css" rel="stylesheet"
-            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
-        <script src="../assets/jquery/jquery-1.11.1.min.js"></script>
-        <script src="../assets/jquery/jquery.mobile-1.4.5.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
-        <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
-    
-        <!-- custom javascript -->
-        <script src="../assets/script/main.js"></script>
-    
-        <!-- theam config -->
-        <!-- <link rel="stylesheet" href="../assets/themes/theam1/theam_d.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-analytics.js"></script>
+
+    <!-- boostrap 4.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- main library -->
+    <link rel="stylesheet" href="../assets/jquery/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="../assets/jquery/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <script src="../assets/jquery/jquery-1.11.1.min.js"></script>
+    <script src="../assets/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
+
+    <!-- custom javascript -->
+    <script src="../assets/script/main.js"></script>
+
+    <!-- theam config -->
+    <!-- <link rel="stylesheet" href="../assets/themes/theam1/theam_d.css" />
         <link rel="stylesheet" href="../assets/themes/theam1/jquery.mobile.icons.min.css" /> -->
-        <!-- <link rel="stylesheet" href="../assets/themes/theam2/themes/team_e_orange.css" />
+    <!-- <link rel="stylesheet" href="../assets/themes/theam2/themes/team_e_orange.css" />
         <link rel="stylesheet" href="../assets/themes/theam2/themes/jquery.mobile.icons.min.css" /> -->
 
 
@@ -59,7 +59,13 @@
     <script type="text/javascript" src="http://dev.jtsage.com/cdn/spinbox/latest/jqm-spinbox.min.js"></script>
 
     <script src="../assets/script/common.js"></script>
-   
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
+
+    <!-- rating system start -->
+    <link rel="stylesheet" href="../Resources/starrr-gh-pages/dist/starrr.css">
+    <!-- end rating -->
+
 
     <style>
         @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
@@ -159,6 +165,34 @@
             margin-left: 4%;
             margin-top: 1%;
         }
+
+        img.ribbon {
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .container {
+            margin-top: 20px;
+            text-align: center;
+            max-width: 450px;
+        }
+
+        input {
+            width: 30px;
+            margin: 10px 0;
+        }
+
+        .ui-bar-a {
+            background-color: #ffffff00;
+        }
+
+        .ui-btn {
+            padding-left: 15px;
+        }
     </style>
 
     <title>Document</title>
@@ -166,92 +200,97 @@
 
 <body>
     <div data-role="page" id="demo-page" class="my-page" data-url="demo-page">
-         <!-- header start -->
-         <div data-role="header" data-position="fixed">
-                <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <!-- <div class="ui-bar ui-bar-a" style="height:30px">Block A</div> -->
-                        <!-- <a class="ui-link" href="" > <img id="Logo" src="../assets/images/res/Logo.png"> </a> -->
-                        <!-- <a href="info.html" data-icon="info-page" class="ui-btn-right" data-transition="flip" data-iconpos="notext" data-theme="a"></a> -->
-                        <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon"> -->
-                        <img src="../assets/images/res/Logo.png" alt="Logo, Facebook" class="logo"
-                            style="float:left; display:inline; width: 36%;" />
-                    </div>
-                    <div class="ui-block-b">
-                        <div class="ui-grid-a ">
-                            <div class="ui-block-a">
-                                <div class="ui-bar ui-bar-a" style="height:35px">
-    
-                                    <!-- <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
-    
-                                    <a href="#positionWindow" id="popupPadded" data-icon="search" data-rel="popup"
-                                        data-theme="a" data-overlay-theme="a" data-position-to="window"
-                                        class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">Search</a>
-    
-                                    <div data-role="popup" data-theme="a" data-overlay-theme="b" data-transition="slidedown"
-                                        id="positionWindow" class="ui-corner-all">
-                                        <div style="padding:10px 20px;" class="pop">
-                                                        <h3>Search for Products</h3>
-                                                        <label for="un" class="ui-hidden-accessible"></label>
-                                                        <input type="text" name="user" id="un" value=""
-                                                placeholder="What Are You Looking For?" data-theme="a">
-                                                       
-                                                        <button type="submit"
-                                                class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-search">SEARCH</button>
-                                        </div>
+        <!-- header start -->
+        <div data-role="header" data-position="fixed">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <!-- <div class="ui-bar ui-bar-a" style="height:30px">Block A</div> -->
+                    <!-- <a class="ui-link" href="" > <img id="Logo" src="../assets/images/res/Logo.png"> </a> -->
+                    <!-- <a href="info.html" data-icon="info-page" class="ui-btn-right" data-transition="flip" data-iconpos="notext" data-theme="a"></a> -->
+                    <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myicon"> -->
+                    <img src="../assets/images/res/Logo.png" alt="Logo, Facebook" class="logo"
+                        style="float:left; display:inline; width: 36%;" />
+                </div>
+                <div class="ui-block-b">
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a">
+                            <div class="ui-bar ui-bar-a" style="height:35px">
+
+                                <!-- <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
+
+                                <a href="#positionWindow" id="popupPadded" data-icon="search" data-rel="popup"
+                                    data-theme="a" data-overlay-theme="a" data-position-to="window"
+                                    class="ui-btn-right ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">Search</a>
+
+                                <div data-role="popup" data-theme="a" data-overlay-theme="b" data-transition="slidedown"
+                                    id="positionWindow" class="ui-corner-all">
+                                    <div style="padding:10px 20px;" class="pop">
+                                                    <h3>Search for Products</h3>
+                                                    <label for="un" class="ui-hidden-accessible"></label>
+                                                    <input type="text" name="user" id="un" value=""
+                                            placeholder="What Are You Looking For?" data-theme="a">
+                                                   
+                                                    <button type="submit"
+                                            class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-btn-icon-left ui-icon-search">SEARCH</button>
                                     </div>
-    
                                 </div>
-                            </div>
-                            <div class="ui-block-b">
-    
-                                 
-                                <div class="ui-grid-b">
-                                    <div class="ui-block-a"></div>
-                                    <div class="ui-block-b">  
-                                        <a id="nav_des" href="../views/Login.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</a>
-                                        <a id="nav_des_acc" href="../views/AccountPage.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" >ACCOUNT</a>
-                                    </div>
-                                    <div class="ui-block-c"></div>
-                                </div><!-- /grid-b -->
-    
-    
-    
-                                <!-- <div class="ui-bar ui-bar-a" style="height:50px" ui-btn-right>
-                                <a href="index.html" data-icon="eye"data-theme="a" class="ui-nodisc-icon">login</a>
-                            </div> -->
+
                             </div>
                         </div>
-    
+                        <div class="ui-block-b">
+
+                             
+                            <div class="ui-grid-b">
+                                <div class="ui-block-a"></div>
+                                <div class="ui-block-b">  
+                                    <a id="nav_des" href="../views/Login.html" rel="external" data-role="button"
+                                        rel=external
+                                        class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</a>
+                                    <a id="nav_des_acc" href="../views/AccountPage.html" rel="external"
+                                        data-role="button" rel=external
+                                        class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all">ACCOUNT</a>
+                                </div>
+                                <div class="ui-block-c"></div>
+                            </div><!-- /grid-b -->
+
+
+
+                            <!-- <div class="ui-bar ui-bar-a" style="height:50px" ui-btn-right>
+                                <a href="index.html" data-icon="eye"data-theme="a" class="ui-nodisc-icon">login</a>
+                            </div> -->
+                        </div>
                     </div>
+
                 </div>
-    
             </div>
-            <!-- header end -->
+
+        </div>
+        <!-- header end -->
         <div data-role="header">
-                <a href="../views/ProductPage.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
-                <label for="title" class="title" >PRODUCT DETAIL</label>
-                <!-- <a href="#" data-icon="check">Save</a> -->
-            </div>
+            <a href="../views/ProductPage.html"
+                class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
+            <label for="title" class="title">PRODUCT DETAIL</label>
+            <!-- <a href="#" data-icon="check">Save</a> -->
+        </div>
 
 
-        <div data-role="content" >
-                <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">arrow-l</button> -->
-               
+        <div data-role="content">
+            <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-arrow-l">arrow-l</button> -->
+
             <!-- testing -->
-           <!-- <a href="../views/ProductPage.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
+            <!-- <a href="../views/ProductPage.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
            <label for="title" class="title" >PRODUCT DETAIL</label> -->
-                <!-- <a href="#page1" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid">Page 1</a> -->
-            
+            <!-- <a href="#page1" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-grid">Page 1</a> -->
+
             <!-- end of testing -->
-            
+
             <!-- <div class="ui-grid-a">
                     <div class="ui-block-a">
                             <a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext">Delete</a>
                     </div>
                     <div class="ui-block-b"> -->
-                            <!-- <label for="title" class="title" >PRODUCT DETAIL</label> -->
-                    <!-- </div>
+            <!-- <label for="title" class="title" >PRODUCT DETAIL</label> -->
+            <!-- </div>
             </div> -->
 
             <div class="ui-grid-a scoreGrid scoreBody">
@@ -281,13 +320,47 @@
                                 id="spin5" data-options='{"type":"horizontal"}' min="1" value="1" max="100" /></div>
                     </div>
 
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <div class="container">
+                        <div class='starrr' id='star1'></div>
+                        <div id="snap1">&nbsp;
+                            <span class='your-choice-was' style='display: none;'>
+                                Your rating was <span class='choice'></span>.
+                            </span>
+                        </div>
+
+                        <textarea name="comment" placeholder="Enter your comments..."></textarea>
+                        <!-- <form action="/action_page.php" id="usrform"> -->
+                        <div class="ui-bar ui-bar-a bottom-tag text-center" style="height:60px"><a href="##"
+                                rel="external" data-role="button"
+                                class="ui-btn ui-btn-inline pay btn btn-default btn-lg"
+                                style="background-color: #fe6311 !important; color:white !important;">Submit</a></div>
+                        <!-- </form> -->
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    </div>
                 </div>
 
             </div>
 
+
         </div> <!-- /content -->
 
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+        <script src="../Resources/starrr-gh-pages/dist/starrr.js"></script>
+        <script>
+            $('#star1').starrr({
+                change: function (e, value) {
+                    if (value) {
+                        $('.your-choice-was').show();
+                        $('.choice').text(value);
+                        $('#comntbx').show();
+                    } else {
+                        $('.your-choice-was').hide();
+                        $('#comntbx').hide();
+
+                    }
+                }
+            });
+        </script>
 
 
 

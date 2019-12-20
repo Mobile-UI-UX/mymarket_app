@@ -62,46 +62,113 @@
     <link rel="stylesheet" type="text/css" href="../assets/css/grid.css" />
 
 
-        <style>
+    <style>
         @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
-.title {
-    min-height: 1.2em;
-    text-align: center;
-    font-size: 10px;
-    display: block;
-    margin: .2em 30% .8em;
-    padding: 10;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    outline: 0 !important;
-    border: 1px solid #A2C432;
-    background: #A2C432;
-    color: #fff;
-    font-weight: bold;
-    text-shadow: 0 1px 1px #335413;
-}
+        .title {
+            min-height: 1.2em;
+            text-align: center;
+            font-size: 10px;
+            display: block;
+            margin: .2em 30% .8em;
+            padding: 10;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            outline: 0 !important;
+            border: 1px solid #A2C432;
+            background: #A2C432;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0 1px 1px #335413;
+        }
 
-.ui-mobile label {
-    font-size: 26px;
-    font-weight: 200;
-    font-family: 'Century Gothic';
-    margin: 0 0 0;
-}
+        .ui-mobile label {
+            font-size: 26px;
+            font-weight: 200;
+            font-family: 'Century Gothic';
+            margin: 0 0 0;
+        }
 
-.ui-mobile label {
-    font-family: sans-serif;
-    font-size: 18px;
-}
+        .ui-mobile label {
+            font-family: sans-serif;
+            font-size: 18px;
+        }
 
-.ui-btn-icon-notext.ui-btn-left {
-    margin-left: 4%;
-    margin-top: 1%;
-}
-        </style>
+        .ui-btn-icon-notext.ui-btn-left {
+            margin-left: 4%;
+            margin-top: 1%;
+        }
+
+
+        /* about info  */
+        a {
+            color: #0254EB
+        }
+
+        a:visited {
+            color: #0254EB
+        }
+
+        a.morelink {
+            text-decoration: none;
+            outline: none;
+        }
+
+        .morecontent span {
+            display: none;
+        }
+
+        .comment {
+            width: 1000px;
+            background-color: #f0f0f0;
+            margin: 10px;
+        }
+    </style>
     <script src="../assets/script/common.js"></script>
+    <!-- <script type="text/javascript"
+	src="https://www.viralpatel.net/demo/jquery/jquery.shorten.1.0.js"></script> -->
 
+    <script>
+        $(document).ready(function () {
+            var showChar = 400;
+            var ellipsestext = "...";
+            var moretext = "more";
+            var lesstext = "less";
+            $('.more').each(function () {
+                var content = $(this).html();
+
+                if (content.length > showChar) {
+
+                    var c = content.substr(0, showChar);
+                    var h = content.substr(showChar - 1, content.length - showChar);
+
+                    var html = c + '<span class="moreellipses">' + ellipsestext + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+                    $(this).html(html);
+                }
+
+            });
+
+            $(".morelink").click(function () {
+                if ($(this).hasClass("less")) {
+                    $(this).removeClass("less");
+                    $(this).html(moretext);
+                } else {
+                    $(this).addClass("less");
+                    $(this).html(lesstext);
+                }
+                $(this).parent().prev().toggle();
+                $(this).prev().toggle();
+                return false;
+            });
+        });
+
+
+    </script>
+
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="C:/Users/Asus/Desktop/Simple-jQuery-Plugin-For-Popup-Feedback-Form-Feedback/css/jquery.feedback.css" type="text/css" />
 
     <!-- theam config -->
     <!-- <link rel="stylesheet" href="../assets/themes/theam1/theam_d.css" />
@@ -132,7 +199,7 @@
 
                                 <!-- <a href="#" class="ui-btn ui-icon-search ui-btn-icon-notext ui-corner-all">No text</a> -->
 
-                                
+
 
                             </div>
                         </div>
@@ -144,8 +211,10 @@
                                 <div class="ui-block-b">  
                                     <button id="nav_des"
                                         class="ui-btn-right ui-btn ui-btn-a ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-eye ui-nodisc-icon">LOGIN</button>
-                                        <a id="nav_des_acc" href="../views/AccountPage.html" rel="external" data-role="button" rel=external class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all" >ACCOUNT</a>
-                                    </div>
+                                    <a id="nav_des_acc" href="../views/AccountPage.html" rel="external"
+                                        data-role="button" rel=external
+                                        class="ui-btn-right ui-btn ui-icon-user ui-btn-icon-notext ui-corner-all">ACCOUNT</a>
+                                </div>
                                 <div class="ui-block-c"></div>
                             </div><!-- /grid-b -->
 
@@ -162,150 +231,203 @@
 
         </div>
         <div data-role="header">
-                <a href="../views/AccountPage.html"
-                    class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
-                <label for="title" class="title">ABOUT US</label>
-                <!-- <a href="#" data-icon="check">Save</a> -->
+            <a href="../views/AccountPage.html"
+                class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-notext" rel="external">Back</a>
+            <label for="title" class="title">ABOUT US</label>
+            <!-- <a href="#" data-icon="check">Save</a> -->
+        </div>
+
+        <div>
+            <h4 align="center">-Our Mission-</h4>
+            <h6 align="center">To provide the most actionable app store data.</h6>
+
+            <h5 align="center">About</h5>
+           
+
+
+        </div>
+        <div class="comment more" style="width: 100%;">
+                Welcome to My Market, your number one source for all things product, ie: bevagers, vegetables,
+                    fruits, etc.
+                    We're dedicated to giving you the very best of this market products, with a focus on dependability,
+                    customer service and uniqueness.
+                    Founded in 2019 by Mr. M.L Perera, My Market has come a long way from its beginnings in a home
+                    office. When Mr. M.L Perera first started out, his passion for helping other parents be more
+                    eco-friendly,
+                    providing the best equipment for his fellow musicians drove him to do intense research, quit her day
+                    job, and gave him the impetus to turn hard work and inspiration into to a booming online store.
+                    We now serve customers all over the US, the world, the Austin area, and are thrilled to be a part of
+                    the eco-friendly wing of the baked goods industry.
+        
+                    We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions
+                    or comments, please don't hesitate to contact us.
+        
+                    Sincerely,
+                    Sasini Anuthara, Co Founder
             </div>
+
 
         <!-- green lable -->
         <!-- <label for="title" class="title">ABOUT US</label> -->
 
 
         <div class="rwd-example">
-                <!-- Lead story block -->
-                <div class="ui-block-a">
-                    <div class="ui-body ui-body-d">
-                            <div class="card" style="width: 15rem;">
-                                    <img src="../assets/images/usr/kavinda.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p align="center" style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">
-                                            Kavinda Sachith</p>
-                                        <!-- <h5 class="card-title">Rs.350</h5> -->
-                                        <p align="center" style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui
-                                            Ux designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
-                                        <div class="ui-alt-icon">
-                                            <!-- Class added to the wrapper -->
-                                                <a href="#" colo
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
-                                                
-                                        </div>
-                    
-                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </div>
-
-                    </div>
-                </div>
-                <!-- secondary story block #1 -->
-                <!-- &nbsp;
-                &nbsp; -->
-                
-                <div class="ui-block-b">
-                    <div class="ui-body ui-body-d">
-                            <div class="card" style="width: 15rem;">
-                                    <img src="../assets/images/usr/mayumi.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p align="center"
-                                            style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">Mayumi
-                                            Wijeratna</p>
-                                        <!-- <h5 class="card-title">Rs.350</h5> -->
-                                        <p align="center"
-                                            style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui Ux
-                                            designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
-                                        <div class="ui-alt-icon">
-                                            <!-- Class added to the wrapper -->
-                                                <a href="#" colo
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
-                                                
-                                        </div>
-                
-                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </div>
-                
-                           
-                    </div>
-                </div>
-                <!-- secondary story block #2 -->
-                <div class="ui-block-c">
-                    <div class="ui-body ui-body-d">
-                            <div class="card" style="width: 15rem;">
-                                    <img src="../assets/images/usr/sasini.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <p align="center"
-                                            style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">Mewan
-                                            Madusha</p>
-                                        <!-- <h5 class="card-title">Rs.350</h5> -->
-                                        <p align="center"
-                                            style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui Ux
-                                            designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
-                                        <div class="ui-alt-icon">
-                                            <!-- Class added to the wrapper -->
-                                                <a href="#" colo
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
-                                                <a href="#"
-                                                class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
-                                                
-                                        </div>
-            
-                                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-                                    </div>
-                                </div>
-
-                    </div>
-                </div>
-                <div class="ui-block-d">
-                        <div class="ui-body ui-body-d">
-                             <div class="card" style="width: 15rem;">
-                            <img src="../assets/images/usr/mewan.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p align="center"
-                                    style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">
-                                    Sasini Sithara</p>
-                                <!-- <h5 class="card-title">Rs.350</h5> -->
-                                <p align="center"
-                                    style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui
-                                    Ux designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj
-                                </p>
-                                <div class="ui-alt-icon">
-                                    <!-- Class added to the wrapper -->
-                                        <a href="#" colo
-                                        class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
-                                        <a href="#"
-                                        class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
-                                        <a href="#"
-                                        class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
-                                        
-                                </div>
-
-                                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            <!-- Lead story block -->
+            <div class="ui-block-a">
+                <div class="ui-body ui-body-d">
+                    <div class="card" style="width: 15rem;">
+                        <img src="../assets/images/usr/kavinda.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">
+                                Kavinda Sachith</p>
+                            <!-- <h5 class="card-title">Rs.350</h5> -->
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui
+                                Ux designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
+                            <div class="ui-alt-icon">
+                                <!-- Class added to the wrapper -->
+                                    <a href="#" colo
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
+                                    
                             </div>
-                        </div>
-    
+
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
                         </div>
                     </div>
-            </div><!-- /rwd-example -->
 
-      
-           
+                </div>
+            </div>
+            <!-- secondary story block #1 -->
+            <!-- &nbsp;
+                &nbsp; -->
 
-               
-                  
+            <div class="ui-block-b">
+                <div class="ui-body ui-body-d">
+                    <div class="card" style="width: 15rem;">
+                        <img src="../assets/images/usr/mayumi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">Mayumi
+                                Wijeratna</p>
+                            <!-- <h5 class="card-title">Rs.350</h5> -->
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui Ux
+                                designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
+                            <div class="ui-alt-icon">
+                                <!-- Class added to the wrapper -->
+                                    <a href="#" colo
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
+                                    
+                            </div>
 
-                       
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- secondary story block #2 -->
+            <div class="ui-block-c">
+                <div class="ui-body ui-body-d">
+                    <div class="card" style="width: 15rem;">
+                        <img src="../assets/images/usr/sasini.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">Mewan
+                                Madusha</p>
+                            <!-- <h5 class="card-title">Rs.350</h5> -->
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui Ux
+                                designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj </p>
+                            <div class="ui-alt-icon">
+                                <!-- Class added to the wrapper -->
+                                    <a href="#" colo
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
+                                    
+                            </div>
+
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="ui-block-d">
+                <div class="ui-body ui-body-d">
+                    <div class="card" style="width: 15rem;">
+                        <img src="../assets/images/usr/mewan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 600; font-size: 18px; margin-bottom: 0rem">
+                                Sasini Sithara</p>
+                            <!-- <h5 class="card-title">Rs.350</h5> -->
+                            <p align="center"
+                                style="color: #4697cf; font-weight: 300; font-size: 14px; margin-bottom: .1rem">Ui
+                                Ux designer & backend DEV,consectetur cfdsawerty qwrg,tyhfrgtrhtyhythtyjtfhjfhgj
+                            </p>
+                            <div class="ui-alt-icon">
+                                <!-- Class added to the wrapper -->
+                                    <a href="#" colo
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-location ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext ui-btn-inline"></a>
+                                    <a href="#"
+                                    class="ui-btn ui-shadow ui-corner-all ui-icon-phone ui-btn-icon-notext ui-btn-inline"></a>
+                                    
+                            </div>
+
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div><!-- /rwd-example -->
+
+        <div align="center" style="background-color: #30343D ;">
+            <hr></hr>
+            <h5 style="font-family:sans-serif ;">Address</h5>
+           <h6  >No:01, Queen Rd, Colombo. </h6>
+            <br></br>
+            <h5 style="font-family:sans-serif ;">Latest Update</h5>
+            <h6>We added some location reveiws |2019 Feb|</h6>
+            <br></br>
+            <h5 style="font-family:sans-serif ;">Contact us</h5>
+            <h6>Share your idea with us :)</h6>
+            <!-- <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-mail">mail</button> -->
+            <a href="index.html" rel="external" class="ui-btn ui-shadow ui-corner-all ui-icon-mail ui-btn-icon-notext" >mail</a>
+        </div>
+
+
+
+        <div id="feedback-anchor"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+<script src="C:/Users/Asus/Desktop/Simple-jQuery-Plugin-For-Popup-Feedback-Form-Feedback/js/jquery.feedback.js"></script> 
+<script type="text/javascript">
+    Feedback.init();
+  </script>
+
+
+
+
     </div>
 
-        </body>
+    
+
+</body>
 
 </html>
